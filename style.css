@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.content{
+    width: 0;
+    overflow: hidden;
+    transition: 0.6s ease;
+}
+
+header{
+    padding: 0;
+    margin: auto;
+    background-color: #00a8f3;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 5rem;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.select{
+    background-color: #ffffff;
+    margin-bottom: 35px;
+    margin-top: -45px;
+    display: flex;
+    justify-content: center;
+}
+.select > div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-style: solid;
+    height: 55px;
+    width: 150px !important;
+    cursor: pointer;
+    border-color: #ffffff #ffffff #00a8f3 #ffffff;
+}
+.select > div:hover{
+    filter: saturate(225%) !important;
+}
+
+img{
+    height: 45px;
+    width: 45px;
+}
+
+.calculator{
+    background-color: #ffffff;
+    margin: auto;
+    width: 360px;
+    border-style: solid;
+    border-color: #00a8f3;
+}
+
+#result{
+    margin: auto;
+    min-height: 100px;
+    border-style: solid;
+    border-color: #ffffff #ffffff #00a8f3 #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} 
+
+#finalresult{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+}
+
+#conta{
+    font-family: 'Roboto', sans-serif;
+    color: #868686;
+}
+
+#numbers{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 72px);
+    gap: 0;
+
+}
+#numbers > div{
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    border: solid;
+    border-color: #00a8f3;
+    border-width: 1px;
+    background-color: #0097dd;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 0;
+    cursor: pointer;
+}
+#numbers > div:hover{
+    border-color: #00f179;
+    border-width: 2px;
+}
+
+#units{
+    width: 450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+}
+#units > div{
+    user-select: none;
+    padding: 1px 0;
+    border-radius: 20px;
+    border-style: solid;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #00a8f3;
+    border-color: #00a8f3;
+    border-width: 1px;
+}
+#units > div:hover{
+    border-color: #00f179;
+    border-width: 2px;
+}
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.dblue{
+    background-color: #007cb6 !important;
+}
+
+.white{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.desmos{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+}

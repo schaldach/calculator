@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pale</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <header>
+        <h1>Pale</h1>
+    </header>
+
+    <section class="select">
+        <div onclick="setvis('calculation')" id="calculation" class="content">
+            <img src="calculadora.png">
+        </div>
+        <div onclick="setvis('conversion')" id="conversion" class="content">
+            <img src="grafico.PNG">
+        </div>
+        <div onclick="setvis('graphication')" id="graphication" class="content">
+            <img src="graph.PNG">
+        </div>
+    </section>
+
+    <main>
+        <section id="calculation" class="content">
+            <div class="calculator">
+                <div id="result">
+                    <div id="finalresult">0</div>
+                    <div id="conta">0</div>
+                </div>
+                <div id="numbers">
+                </div>
+            </div>
+        </section>
+
+        <section id="conversion" class="content">
+            <div id="units">
+            </div>
+        </section>
+        
+        <section id="graphication" class="content">
+            <div id="calculator" class="desmos">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Developed by Schaldach®. Powered by Nerdamer® and Desmos®.</p>
+    </footer>
+
+    <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <script src='expressions.js'></script>
+    <script src='script.js'></script>
+    <script src="./jiggzson-nerdamer-926e12d/all.min.js"></script>
+</body>
+</html>
